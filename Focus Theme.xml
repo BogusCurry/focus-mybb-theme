@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<theme name="Focus - Premium MyBB Theme" version="1807">
+<theme name="Focus - Premium MyBB Theme" version="1808">
 	<properties>
-		<templateset><![CDATA[25]]></templateset>
+		<templateset><![CDATA[2]]></templateset>
 		<editortheme><![CDATA[mybb.css]]></editortheme>
 		<imgdir><![CDATA[images/focus]]></imgdir>
 		<logo><![CDATA[images/focus/logo.png]]></logo>
 		<tablespace><![CDATA[5]]></tablespace>
 		<borderwidth><![CDATA[0]]></borderwidth>
 		<color><![CDATA[]]></color>
-		<disporder><![CDATA[a:7:{s:10:"global.css";i:1;s:10:"usercp.css";i:2;s:9:"modcp.css";i:3;s:16:"star_ratings.css";i:4;s:14:"showthread.css";i:5;s:17:"thread_status.css";i:6;s:8:"css3.css";i:7;}]]></disporder>
+		<disporder><![CDATA[a:7:{s:8:"css3.css";i:1;s:10:"global.css";i:2;s:10:"usercp.css";i:3;s:9:"modcp.css";i:4;s:16:"star_ratings.css";i:5;s:14:"showthread.css";i:6;s:17:"thread_status.css";i:7;}]]></disporder>
 	</properties>
 	<stylesheets>
-		<stylesheet name="css3.css" version="1807"><![CDATA[]]>
+		<stylesheet name="css3.css" version="1808"><![CDATA[
+		]]>
 		</stylesheet>
-		<stylesheet name="global.css" version="1807"><![CDATA[body {
+		<stylesheet name="global.css" version="1808"><![CDATA[body {
 	background: #666a73 url("images/focus/pattern.png") repeat scroll left top;
 	color: #333;
 	text-align: center;
@@ -1508,7 +1509,7 @@ a.button.report_user_button span {
 
 /** jGrowl Styling **/
 .jGrowl {
-  z-index: 9999;
+  z-index: 999999;
   color: #ffffff;
   font-size: 12px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -1804,18 +1805,19 @@ div.jqi .jqisubstate .jqibuttons button{
 .jqi .jqiarrowrb{ right: -20px; bottom: 10px; border-left-color: #ffffff; }
 
 /** Impromptu End */
-]]>
+
+		]]>
 		</stylesheet>
 	</stylesheets>
 	<templates>
-		<template name="footer" version="1807"><![CDATA[<debugstuff>
+		<template name="footer" version="1808"><![CDATA[<debugstuff>
 	</div>
 </div>
 <div id="wrapper2"> <!--Footer Start-->
 <div id="footer2">
 <div class="footerFloat">
 <h4><i class="fa fa-info-circle"></i>  About {$mybb->settings['homename']}</h4>
-<p>Focus MyBB Theme is designed for MyBB 1.8 series and is tested properly till the most current version of MyBB i.e. 1.8.7. It is simple, clean and light MyBB theme with use of font-awesome icons and shrinking header.</p> 
+<p>Focus MyBB Theme is designed for MyBB 1.8 series and is tested properly till the most current version of MyBB i.e. 1.8.8. It is simple, clean and light MyBB theme with use of font-awesome icons and shrinking header.</p> 
 <p>For any more information, please use our contact form.</p>
 </div>
 <div class="footerFloat">
@@ -1839,8 +1841,8 @@ div.jqi .jqisubstate .jqibuttons button{
 <div class="footerFloat">
 <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-align-justify"></i>  Advertise</h4>
 <ul>
-<li><a href="#"><i class="fa fa-bolt"></i> Link 1</a></li>
-<li><a href="#"><i class="fa fa-bolt"></i> Link 2</a></li>
+<li><a href="http://wallbb.co.uk/product/focus-responsive-mybb-theme/"><i class="fa fa-bolt"></i> Focus Responsive Theme</a></li>
+<li><a href="http://wallbb.co.uk/product/focus-responsive-mybb-theme/"><i class="fa fa-bolt"></i> Responsive MyBB Theme</a></li>
 <li><a href="#"><i class="fa fa-bolt"></i> Link 3</a></li>
 <li><a href="#"><i class="fa fa-bolt"></i> Link 4</a></li>
 </ul>
@@ -1878,7 +1880,7 @@ div.jqi .jqisubstate .jqibuttons button{
 				{$lang->powered_by} <a href="http://www.mybb.com" target="_blank">MyBB{$mybbversion}</a>, &copy; 2002-{$copy_year} <a href="http://www.mybb.com" target="_blank">MyBB Group</a>.
 				<!-- End powered by -->
 								<br />
-				<p>Focus MyBB Theme <i class="fa fa-code" title ="Coded" style="color: #e76b6b;"></i> by <a href="http://wallbb.co.uk" target="_blank">WallBB</a></p>
+				<p>Focus MyBB Theme <i class="fa fa-code" title ="Coded" style="color: #e76b6b;"></i> by <a href="http://wallbb.co.uk" title="Focus MyBB Theme" target="_blank">WallBB</a></p>
 			</span>
 		</div>
 	</div>
@@ -2039,10 +2041,15 @@ div.jqi .jqisubstate .jqibuttons button{
 		// -->
 		</script>
 	</td>]]></template>
-		<template name="header" version="1807"><![CDATA[<div class="header">
+		<template name="header" version="1808"><![CDATA[<div class="header">
 		<a name="top" id="top"></a>
-			<div class="wrapper">	<div class="logo">
-  <a href="{$mybb->settings['bburl']}/index.php"><i class="fa fa-bolt" style="color: #fcb941;"></i> {$mybb->settings['homename']}</a></div></div>
+			<div class="wrapper">
+				<div class="logo">
+  <a href="{$mybb->settings['bburl']}/index.php"><i class="fa fa-bolt" style="color: #fcb941;"></i> {$mybb->settings['homename']}</a></div>
+ <!-- If you want to use Image based logo, uncomment this               <div class="logo">
+ <a href="{$mybb->settings['bburl']}/index.php"><img src="{$theme['logo']}" title="{$mybb->settings['homename']}" alt="{$mybb->settings['homename']}"></a></div>	
+	-->
+	</div>
 <div class="tophead">
 <div class="wrapper">
 <div style="float: right;">{$welcomeblock}</div>
@@ -2071,12 +2078,16 @@ div.jqi .jqisubstate .jqibuttons button{
 				{$unreadreports}
 				{$pending_joinrequests}
 				{$awaitingusers}
+			    <div class="pm_alert" id="pm_notice">
+					<div><strong><i class="fa fa-bullhorn float_left" aria-hidden="true"></i> Many more exiting features in new <a href="http://wallbb.co.uk/product/focus-responsive-mybb-theme/">Focus Responsive Version by WallBB</a>. Download Today. <i class="fa fa-smile-o" aria-hidden="true"></i></strong></div>
+				</div>
 				<navigation>]]></template>
-		<template name="headerinclude" version="1807"><![CDATA[<meta http-equiv="Content-Type" content="text/html; charset={$charset}" />
+		<template name="headerinclude" version="1808"><![CDATA[<meta http-equiv="Content-Type" content="text/html; charset={$charset}" />
 <meta http-equiv="Content-Script-Type" content="text/javascript" />
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
 <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 {$stylesheets}
+<link rel="shortcut icon" type="image/png" href="http://i.imgur.com/ABb8xPB.png">
 <link rel="alternate" type="application/rss+xml" title="{$lang->latest_threads} (RSS 2.0)" href="{$mybb->settings['bburl']}/syndication.php" />
 <link rel="alternate" type="application/atom+xml" title="{$lang->latest_threads} (Atom 1.0)" href="{$mybb->settings['bburl']}/syndication.php?type=atom1.0" />
 <script type="text/javascript" src="{$mybb->asset_url}/jscripts/jquery.js?ver=1806"></script>
@@ -2206,7 +2217,7 @@ function getCurrentScroll() {
 </div>]]></template>
 		<template name="header_welcomeblock_member_admin" version="1807"><![CDATA[<a href="{$mybb->settings['bburl']}/{$admin_dir}/index.php" class="admincp"><i class="fa fa-cog" style="color: #e76b6b;"></i> {$lang->welcome_admin}</a>]]></template>
 		<template name="header_welcomeblock_member_moderator" version="1807"><![CDATA[<a href="{$mybb->settings['bburl']}/modcp.php" class="modcp"><i class="fa fa-cogs" style="color: #fcb941;"></i> {$lang->welcome_modcp}</a>]]></template>
-		<template name="index" version="1807"><![CDATA[<html>
+		<template name="index" version="1808"><![CDATA[<html>
 <head>
 <title>{$mybb->settings['bbname']}</title>
 {$headerinclude}
@@ -2241,10 +2252,10 @@ Please use any recent posts plugin to show recent threads.</td>
 <tr>
 <td class="trow1">
 <span class="smalltext">
-{$mybb->settings['bbname']} has {$stats['numusers']}<br />
-Our Newest Member {$newestmember}<br />
-We have total number of Threads {$stats['numthreads']}<br />
-We have total number of Posts {$stats['numposts']}
+{$mybb->settings['bbname']} has {$stats['numusers']} members<br />
+Our Newest Member is {$newestmember}<br />
+We have total number of Threads : {$stats['numthreads']}<br />
+We have total number of Posts : {$stats['numposts']}
 </span>
 </td>
 </tr>
@@ -2258,7 +2269,9 @@ We have total number of Posts {$stats['numposts']}
 </tr>
 <tr>
 <td class="trow1">
-Please use contact us to advertise here, dimensions 250px X 250px</td>
+Please use contact us to advertise here, dimensions 250px X 250px<br/>
+<a href="http://wallbb.co.uk/product/focus-responsive-mybb-theme/"><strong>Download Focus Responsive Theme</strong></a>	
+</td>
 </tr>
 </table>
 </div>
