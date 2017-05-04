@@ -1,9 +1,9 @@
 # focus-mybb-theme
 
-Thanks for downloading Focus MyBB Theme, created by WallBB.co.uk
-http://community.mybb.com/mods.php?action=view&pid=671
+Thanks for downloading Focus MyBB Theme, created by https://wallbb.co.uk
+https://community.mybb.com/mods.php?action=view&pid=671
 If you are looking for responsive version, it can be downloaded at 
-http://wallbb.co.uk/product/focus-responsive-mybb-theme/
+https://wallbb.co.uk/product/focus-responsive-mybb-theme/
 
 The theme is currently tested till 1.8.8
 Installation is simple :-
@@ -16,15 +16,15 @@ Installation is simple :-
 Some tutorials for extra additions -
 
 1. To add latest thread in sidebar , please follow this post
-http://community.mybb.com/thread-189771-...pid1217835
+https://community.mybb.com/thread-189771-post-1217835.html#pid1217835
 
 2. To add Forum Staff online in sidebar, please check this post :-
-https://community.mybb.com/thread-189771...pid1239729
+https://community.mybb.com/thread-189771-post-1239729.html#pid1239729
 
 Enjoy using Focus Theme, in case of any issues contact at
-http://community.mybb.com/thread-189771.html
+https://community.mybb.com/thread-189771.html
 
-http://wallbb.co.uk/contact-us/
+https://wallbb.co.uk/contact-us/
 
 Regards
 WallBB
