@@ -1,7 +1,9 @@
 # focus-mybb-theme
 
 Thanks for downloading Focus MyBB Theme, created by https://wallbb.co.uk
+
 https://community.mybb.com/mods.php?action=view&pid=671
+
 If you are looking for responsive version, it can be downloaded at 
 https://wallbb.co.uk/product/focus-responsive-mybb-theme/
 
